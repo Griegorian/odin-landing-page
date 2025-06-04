@@ -6,78 +6,169 @@ body {
     flex-direction: column;
     margin-left: 0;
     height: 100vh;
-    overflow: hidden;
+    overflow: scroll;
 }
-
 .header {
-    color: #F9FAF8;
-    font-size: 24px;
     background-color: #1f2937;
-    padding: 0px 150px;
+    padding: 0px 0px;
     display: flex;
-    justify-content:space-between;
     align-items: center;
-    
 }
-
-.footer {
-    background-color: #1f2937;
-    color: #E5E7Eb;
-}
-
-ul {
+    ul {
     display: flex;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 300px;
     gap: 20px;
     list-style: none;
     font-size: 18px;
     color: #E5E7Eb;
 }
+#HeaderLogo {
+    color: #F9FAF8;
+    font-size: 24px;
+    margin-left: 300px;
+
+}
+
+/*----------------------------MAIN ALL-------------------------------*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main1, .main2, .main3, .main4{
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*----------------------------MAIN 1-------------------------------*/
+
 
 .main1 {
     background-color: #1f2937;
-    color: #F9FAF8;
+    display: flex;
+    flex-direction: row;
+    gap: 75px;
+    justify-content: flex-start;
 
 }
+.main1_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 300px;
+    width: 500px;
+
+}
+.main1_2 {
+    margin-right: 330px;
+    margin-left: auto;
+}
+
+.ImageMain1{
+    border-radius: 8px;
+    height: 300px;
+    width: auto;
+    transform: rotate(90deg);
+}
+
+/*-------------------------MAIN 2------------------------------*/
 
 .main2 {
 
 }
 
+/*-------------------------MAIN 3------------------------------*/
 .main3 {
-    background-color: #E5E7Eb;
+   background-color: #E5E7Eb;
+}
+
+.QuoteContainer{
+    display: flex;
+       flex-direction: column;
+       width: 800px;
+}
+
+#Quote {
     font-size: 36px;
     font-style: italic;
     font-weight: 200;
     color: #1f2937;
-
+}
+#Thor{
+    font-weight: 900;
+    color: #1f2937;
+   align-self: flex-end;
 }
 
+/*-------------------------MAIN 4------------------------------*/
 .main4 {
 
-
 }
 
-.footer {
+.BlueContainer {
+    background-color: #3882f6;
+    padding: 40px 100px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    
+   
+}
 
+#ItsTime{
+    color:#F9FAF8;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/*--------------------- MISC ------------------*/
+button {
+    border-radius: 6px;
+    background-color: #3882f6;
+    border: none;
+    color: #F9FAF8;
+    padding: 5px 20px;
+    font-weight: 600;
+}
+
+.button1 {
+    margin-top: 10px;
+}
+
+.button2 {
+    border: 2px solid white;
+}
+
+#HeroMain {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+#HeroSec {
+    font-size: 18px;
+    color: #E5E7Eb;
+}
+
+
+
+
+/*---------------------FOOTER-----------------------*/
+
+.footer {
     height: 100px;
     display: flex;
     justify-content: center; 
     align-items: center;
     flex-shrink: 0;
-}
-
-.main1, .main2, .main3, .main4{
-    flex: 1;
-    min-height: 250px;
-       display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
-    justify-content: center;
-    flex: 1;
+    background-color: #1f2937;
+    color: #E5E7Eb;
 }
